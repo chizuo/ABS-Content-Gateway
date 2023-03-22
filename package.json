@@ -1,0 +1,30 @@
+{
+  "name": "scraper-service",
+  "version": "1.0.0",
+  "description": "returns assets for browser extension project",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js",
+    "test": "jest test.js",
+    "test-watch": "jest --watch --notify --notifyMode=change test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chizuo/COMP583-G1-Scraper.git"
+  },
+  "author": "Jonathan Chua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chizuo/COMP583-G1-Scraper/issues"
+  },
+  "homepage": "https://github.com/chizuo/COMP583-G1-Scraper#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "usetube": "^2.2.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.21",
+    "supertest": "^6.3.3"
+  }
+}
