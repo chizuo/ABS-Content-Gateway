@@ -1,7 +1,7 @@
 const { google } = require('googleapis');
 const express = require('express');
 const router = express.Router();
-const api_key = "AIzaSyDhbgJVVO5c14Agm1tkQVBu3wUxk5VmILs";
+const api_key = require('../../ENV/youtube_api');
 
 router.get('/', async(req,res) => {
     const url = req.body.url;
