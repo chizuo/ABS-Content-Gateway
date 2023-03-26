@@ -16,7 +16,7 @@ router.get('/', async(req,res) => {
             }
             playlist.push(video);
         }
-        res.status(200).json({ plid: plid, playlists: playlist });
+        res.status(200).json({ plid: plid, videos: playlist });
     } catch(err) {
         console.log(err.message);
         res.status(500).send(err.message);
