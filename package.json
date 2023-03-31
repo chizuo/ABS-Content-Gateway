@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chizuo/COMP583-G1-Scraper.git"
+    "url": "git+https://github.com/chizuo/ABS-Content-Gateway"
   },
   "author": "Jonathan Chua",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chizuo/COMP583-G1-Scraper/issues"
+    "url": "https://github.com/chizuo/ABS-Content-Gateway/issues"
   },
-  "homepage": "https://github.com/chizuo/COMP583-G1-Scraper#readme",
+  "homepage": "https://github.com/chizuo/ABS-Content-Gateway#readme",
   "dependencies": {
     "express": "^4.18.2",
     "googleapis": "^114.0.0",
