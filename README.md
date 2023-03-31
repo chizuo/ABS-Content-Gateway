@@ -4,7 +4,7 @@
 This is the Content API Gateway for the front end application: "[A Better Subscription Service](https://github.com/chizuo/ABS-Browser-App)"
 
 ### Route Details
-`GET:<baseURL>/v1/youtube`
+`POST:<baseURL>/v1/youtube`
 - expects a JSON object 
     ```
     { 
