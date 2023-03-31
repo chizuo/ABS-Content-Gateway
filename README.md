@@ -1,7 +1,7 @@
 # A Better Subscription Service : Content Gateway
 
 ### Description
-This is the Content API Gateway for the front end application: "[A Better Subscription Service](https://github.com/chizuo/ABS-Browser-App)"
+This is the Content Gateway for the front end application: "[A Better Subscription Service REST-API](https://github.com/chizuo/ABS-REST-API)"
 
 ### Route Details
 `POST:<baseURL>/v1/youtube`
