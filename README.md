@@ -15,7 +15,13 @@ This is the Content API Gateway for the front end application: "[A Better Subscr
 - returns a playlist object
 
 `PUT:<baseURL>/v1/youtube`
-- expects a JSON object `{ url: <the_url_of_youtube_playlist>, contents: [<content object>]}`
+- expects a JSON object
+  ```
+    { 
+        url: <the_url_of_youtube_playlist>, 
+        contents: [<content object>]
+    }
+  ```
 - returns a list of contents
   - a list of contents contain content objects 
 
