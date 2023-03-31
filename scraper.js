@@ -1,11 +1,9 @@
 const express = require('express');
-const youtube = require('./routes/v1/youtube');
-const YouTube = require('./routes/v2/youtube');
+const routes = require('./routes');
 
 const server = express();
 server.use(express.json());
-server.use('/v1/youtube', youtube);
-server.use('/v2/youtube', YouTube);
+server.use('/', routes);
 
 module.exports = server;
 

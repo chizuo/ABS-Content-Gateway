@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Dev secrets
-ENV/
+features/

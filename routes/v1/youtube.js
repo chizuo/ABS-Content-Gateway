@@ -1,22 +1,14 @@
-const youtube = require('usetube');
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
+const Youtube = require('../../features');
 
 router.get('/', async(req,res) => {
     const url = req.body.url;
     const plid = url.substring((url.indexOf('=') + 1));
-    const playlist = [];
     try {
-        const videos = await youtube.getPlaylistVideos(plid);
-        for(let i = 0; i < videos.length; i++) {
-            let video = {
-                title: videos[i].original_title,
-                url: `https://www.youtube.com/watch?v=${videos[i].id}`,
-                watched: false
-            }
-            playlist.push(video);
-        }
-        res.status(200).json({ plid: plid, videos: playlist });
+        const youtube = new Youtube(plid);
+        const { playlist_title, channel, channel_url } = await youtube.getPlaylistInfo();
+        const contents = await youtube.getPlaylistContent();
+        res.status(200).json({ playlist_title: playlist_title, plid: plid, playlist_url: url, channel: channel, channel_url: channel_url, contents: contents }); 
     } catch(err) {
         console.log(err.message);
         res.status(500).send(err.message);
