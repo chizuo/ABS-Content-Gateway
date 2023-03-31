@@ -18,7 +18,7 @@ This is the Content API Gateway for the front end application: "[A Better Subscr
 - expects a JSON object
   ```
     { 
-        url: <the_url_of_youtube_playlist>, 
+        plid: string, 
         contents: [<content object>]
     }
   ```
