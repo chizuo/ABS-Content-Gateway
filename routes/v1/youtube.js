@@ -1,9 +1,10 @@
 const router = require('express').Router();
 const Youtube = require('../../features');
 
-router.get('/', async(req,res) => {
+router.post('/', async(req,res) => {
     try {
-        const plid = req.body.url.substring((url.indexOf('=') + 1));
+        const url = req.body.url;
+        const plid = url.substring((url.indexOf('=') + 1));
         const youtube = new Youtube(plid);
         const { playlist_title, channel, channel_url } = await youtube.getPlaylistInfo();
         const contents = await youtube.getPlaylistContent();
